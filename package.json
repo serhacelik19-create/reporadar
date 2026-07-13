@@ -1,0 +1,41 @@
+{
+  "name": "reporadar",
+  "version": "1.0.0",
+  "description": "CLI tool to probe code quality, security, and dependencies of a GitHub repository.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "reporadar": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "cli",
+    "github",
+    "analyzer",
+    "gemini",
+    "ai",
+    "security",
+    "quality"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "boxen": "^8.0.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "ora": "^8.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
