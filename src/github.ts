@@ -54,7 +54,7 @@ export function parseGitHubUrl(url: string): GitHubInfo {
 export async function cloneRepository(cloneUrl: string): Promise<string> {
   const tempDir = path.join(
     os.tmpdir(),
-    `devprobe-${Math.random().toString(36).substring(2, 10)}`
+    `reporadar-${Math.random().toString(36).substring(2, 10)}`
   );
 
   try {
